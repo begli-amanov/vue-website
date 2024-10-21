@@ -1,29 +1,39 @@
-<script setup lang="ts">
-import { ref } from 'vue';
-
-const items = ref([
-	{
-		label: 'Home',
-		icon: 'pi pi-home',
-	},
-	{
-		label: 'Now',
-		icon: 'pi pi-clock',
-		url: 'https://begli-amanov.github.io/my-first-website/now.html',
-	},
-	{
-		label: 'Blog',
-		icon: 'pi pi-tablet',
-	},
-]);
+<script lang="ts" setup>
+import Nav from './Nav.vue';
 </script>
 
-<style lang="css" scoped></style>
-
 <template>
-	<div class="card">
-		<Menubar :model="items" />
-	</div>
+	<header>
+		<div class="header title">
+			<h1>Jumpstart</h1>
+
+			<Nav />
+		</div>
+		<h2>
+			Explore these helpful resources that could make your Start a bit more
+			comfortable
+		</h2>
+	</header>
 </template>
 
-<style scoped></style>
+<style scoped>
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 1rem;
+	margin-bottom: 1.8rem;
+}
+
+nav {
+	display: inline-flex;
+	gap: 0.8rem;
+}
+
+@media only screen and (min-width: 20rem) and (max-width: 26.5625rem) {
+	header {
+		padding-inline: var(--mobile-padding);
+		margin-bottom: 0.8rem;
+	}
+}
+</style>

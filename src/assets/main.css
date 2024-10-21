@@ -30,30 +30,17 @@ body {
   transition:
     color 0.5s,
     background-color 0.5s;
-  line-height: 1.5;
   font-family:
-    'Inter var',
-    'Inter',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
+    'Poppins',
     sans-serif;
+  line-height: 1.5;
   font-size: 1rem;
+  background-color: #1d1e27;
+  color: var(--main-text-color);
+  scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-
-  --main-color: #fff;
-
-  background-color: #34343d;
 }
 
 /*
@@ -97,4 +84,128 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* 
+==========================================================================
+   Custom Variables
+==========================================================================
+*/
+
+:root {
+  --main-text-color: #fff;
+  --card-background: #34343d;
+  --border: .0625rem solid #616268;
+  --emerald: #34d399;
+  --card-border-radius: .375rem;
+  --page-padding: 1rem 2rem;
+  --mobile-padding: 1rem;
+  --button-transition-duration: .2s;
+  --hover-color: #6ee7b7;
+}
+
+.card,
+.wrapper,
+.subscribe-block {
+  padding: var(--page-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  border: var(--border);
+  background-color: var(--card-background);
+  border-radius: var(--card-border-radius);
+  gap: 1rem;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  position: relative;
+  color: #18181b;
+  background: var(--emerald);
+  border: .0625rem solid var(--emerald);
+  padding: .4375rem .6563rem;
+  font-weight: 500;
+  border-radius: var(--card-border-radius);
+  outline-color: transparent;
+  gap: .5rem;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--hover-color);
+  }
+}
+
+.icon {
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+.interactions,
+input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a,
+.button {
+  transition: all .15s linear;
+}
+
+a {
+  border-bottom: .0625rem solid var(--emerald);
+  color: var(--emerald);
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--hover-color);
+  }
+}
+
+h2,
+h3 {
+  text-align: center;
+  padding-left: .8rem;
+  padding-right: .8rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+img {
+  border-top-left-radius: var(--card-border-radius);
+  border-top-right-radius: var(--card-border-radius);
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 20rem) and (max-width: 26.5625rem) {
+
+  body,
+  .button,
+  nav {
+    font-size: .875rem;
+    line-height: 140%;
+  }
+
+  .card,
+  .wrapper {
+    padding: var(--mobile-padding);
+  }
+
 }

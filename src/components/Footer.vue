@@ -20,12 +20,7 @@ import Nav from './Nav.vue';
 <style scoped>
 footer {
 	background-color: #282931;
-}
-
-@media only screen and (min-width: 20rem) and (max-width: 26.5625rem) {
-	footer {
-		padding: 1.5rem 1rem;
-		gap: 1.5rem;
-	}
+	padding: 1.5rem 1rem;
+	gap: 1.5rem;
 }
 </style>

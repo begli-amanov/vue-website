@@ -104,6 +104,12 @@ h6 {
   --hover-color: #6ee7b7;
 }
 
+/* 
+==========================================================================
+   Custom Variables
+==========================================================================
+*/
+
 .card,
 .wrapper,
 .subscribe-block,
@@ -115,8 +121,8 @@ footer {
 }
 
 .wrapper {
-  gap: 1.8rem;
-  margin-bottom: 1.75rem;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .card {
@@ -124,6 +130,21 @@ footer {
   background-color: var(--card-background);
   border-radius: var(--card-border-radius);
   gap: 1rem;
+}
+
+header,
+.header {
+  margin-bottom: .8rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: .5rem;
+  margin-bottom: 1.8rem;
+  padding: var(--page-padding);
+  margin-bottom: 0.8rem;
 }
 
 .title {
@@ -137,13 +158,10 @@ footer {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  user-select: none;
-  overflow: hidden;
-  position: relative;
   color: #18181b;
   background: var(--emerald);
   border: .0625rem solid var(--emerald);
-  padding: .4375rem .6563rem;
+  padding: .375rem .75rem;
   font-weight: 500;
   border-radius: var(--card-border-radius);
   outline-color: transparent;
@@ -153,6 +171,7 @@ footer {
   &:focus,
   &:active {
     background-color: var(--hover-color);
+    color: #18181b;
   }
 }
 
@@ -166,6 +185,34 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.interactions,
+input {
+  border: 0.0625rem solid var(--card-background);
+  border-radius: var(--card-border-radius);
+  background-color: var(--card-background);
+  outline-color: transparent;
+  max-width: 100%;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.interactions {
+  padding-top: .375rem;
+  padding-bottom: .375rem;
+  padding-left: .75rem;
+  padding-right: .375rem;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid var(--emerald);
+  }
 }
 
 a,
@@ -220,8 +267,12 @@ img {
   }
 
   .card,
-  .wrapper {
+  .wrapper,
+  .header {
     padding: var(--mobile-padding);
   }
 
+  h2 {
+    font-size: .9375rem;
+  }
 }

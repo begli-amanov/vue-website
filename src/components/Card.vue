@@ -100,4 +100,4 @@
 	</article>
 </template>
 
-<style lang="css" scoped></style>
+<style scoped></style>

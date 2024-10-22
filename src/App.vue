@@ -13,5 +13,3 @@ import Subscribe from './components/Subscribe.vue';
 	</main>
 	<Footer />
 </template>
-
-<style scoped></style>

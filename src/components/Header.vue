@@ -4,7 +4,7 @@ import Nav from './Nav.vue';
 
 <template>
 	<header>
-		<div class="header title">
+		<div class="header title" id="header">
 			<h1>Jumpstart</h1>
 
 			<Nav />
@@ -16,19 +16,4 @@ import Nav from './Nav.vue';
 	</header>
 </template>
 
-<style scoped>
-.header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-top: 1rem;
-	margin-bottom: 1.8rem;
-}
-
-@media only screen and (min-width: 20rem) and (max-width: 26.5625rem) {
-	header {
-		padding-inline: var(--mobile-padding);
-		margin-bottom: 0.8rem;
-	}
-}
-</style>
+<style scoped></style>

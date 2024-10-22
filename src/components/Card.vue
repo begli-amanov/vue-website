@@ -2,7 +2,7 @@
 
 <template>
 	<article class="card">
-		<a href="https://www.unrealengine.com/">
+		<a href="https://www.unrealengine.com/" class="image">
 			<img
 				src="../assets/UE-logo.jpg"
 				alt="White unreal engine logo on a black background"

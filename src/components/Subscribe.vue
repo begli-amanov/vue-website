@@ -18,9 +18,9 @@
 
 <style scoped>
 h2 {
-	font-size: 1.25rem;
 	border-bottom: 2px solid var(--main-text-color);
 	padding-bottom: 0.25rem;
 	border-bottom-width: 0.1875rem;
+	padding-inline: 0.0625rem;
 }
 </style>

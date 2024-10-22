@@ -17,10 +17,4 @@ import Nav from './Nav.vue';
 	</footer>
 </template>
 
-<style scoped>
-footer {
-	background-color: #282931;
-	padding: 1.5rem 1rem;
-	gap: 1.5rem;
-}
-</style>
+<style scoped></style>

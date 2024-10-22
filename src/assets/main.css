@@ -1,4 +1,4 @@
-@import 'primeicons/primeicons.css';
+@import "primeicons/primeicons.css";
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -106,11 +106,17 @@ h6 {
 
 .card,
 .wrapper,
-.subscribe-block {
+.subscribe-block,
+footer {
   padding: var(--page-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.wrapper {
+  gap: 1.8rem;
+  margin-bottom: 1.75rem;
 }
 
 .card {
@@ -123,7 +129,7 @@ h6 {
 .title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .button {
@@ -150,9 +156,9 @@ h6 {
   }
 }
 
-.icon {
-  font-size: 1rem;
-  vertical-align: top;
+.pi.pi-external-link,
+.pi.pi-check {
+  font-size: 0.75rem;
 }
 
 .interactions,
@@ -179,12 +185,22 @@ a {
   }
 }
 
+nav {
+  display: inline-flex;
+  gap: 0.8rem;
+  text-transform: uppercase;
+}
+
+h2,
+h3,
+.paragraph {
+  text-align: center;
+  padding-left: .7rem;
+  padding-right: .7rem;
+}
+
 h2,
 h3 {
-  text-align: center;
-  padding-left: .8rem;
-  padding-right: .8rem;
-  font-size: 1rem;
   font-weight: 600;
 }
 

@@ -25,11 +25,6 @@ import Nav from './Nav.vue';
 	margin-bottom: 1.8rem;
 }
 
-nav {
-	display: inline-flex;
-	gap: 0.8rem;
-}
-
 @media only screen and (min-width: 20rem) and (max-width: 26.5625rem) {
 	header {
 		padding-inline: var(--mobile-padding);

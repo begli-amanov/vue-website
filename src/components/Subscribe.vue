@@ -6,7 +6,7 @@
 		<hr />
 	</div>
 
-	<p>
+	<p class="paragraph">
 		Enjoying website? You could enjoy my
 		<a href=""><strong>blog</strong></a> as well. Subscribe with the
 		<strong>form</strong> below. Unsubscribe at any time.
@@ -20,12 +20,6 @@
 </template>
 
 <style scoped>
-.icon {
-	width: 0.875rem;
-	height: 0.875rem;
-	margin-bottom: 0.3125rem;
-}
-
 .interactions,
 input {
 	background-color: var(--card-background);
@@ -49,11 +43,6 @@ input {
 	}
 }
 
-p {
-	text-align: center;
-	padding-inline: 0.6rem;
-}
-
 hr {
 	display: block;
 	width: 6.5rem;
@@ -66,5 +55,8 @@ hr {
 
 h2 {
 	font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 20rem) and (max-width: 26.5625rem) {
 }
 </style>

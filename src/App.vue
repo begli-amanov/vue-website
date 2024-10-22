@@ -14,9 +14,4 @@ import Subscribe from './components/Subscribe.vue';
 	<Footer />
 </template>
 
-<style scoped>
-.wrapper {
-	gap: 1.8rem;
-	margin-bottom: 1.75rem;
-}
-</style>
+<style scoped></style>

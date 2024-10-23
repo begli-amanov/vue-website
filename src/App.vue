@@ -4,7 +4,7 @@ import { RouterView } from 'vue-router';
 </script>
 
 <template>
-	<!-- Header component with Nav within -->
+	<!-- HEADER COMPONENT WITH NAV COMPONENT WITHIN -->
 	<Header />
 	<RouterView />
 </template>

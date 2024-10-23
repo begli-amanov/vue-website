@@ -7,7 +7,7 @@ import Nav from './Nav.vue';
 		<div class="header title" id="header">
 			<RouterLink to="/" class="title"><h1>Jumpstart</h1></RouterLink>
 
-			<!-- Nav Component -->
+			<!-- NAV WITH ROUTER MECHANISM FROM VUE-->
 			<Nav />
 		</div>
 		<h2>

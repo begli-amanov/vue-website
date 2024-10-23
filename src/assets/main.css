@@ -83,6 +83,7 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  font-weight: bold;
 }
 
 /*
@@ -123,24 +124,36 @@ h6 {
 .card,
 .wrapper,
 .subscribe-block,
+.header,
+.interactions,
 footer,
+input,
+header,
 #app {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 .card,
 .wrapper,
 .subscribe-block,
-footer {
-  padding: var(--page-padding);
-
+header,
+footer,
+#app {
+  flex-direction: column;
 }
 
 .wrapper {
   gap: 2rem;
   margin-bottom: 2.5rem;
+}
+
+.card,
+.wrapper,
+.subscribe-block,
+.header,
+footer {
+  padding: var(--page-padding);
 }
 
 .card {
@@ -153,22 +166,14 @@ footer {
 header,
 .header {
   margin-bottom: .8rem;
-}
-
-.header {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-top: .5rem;
-  margin-bottom: 1.8rem;
-  padding: var(--page-padding);
-  margin-bottom: 0.8rem;
 }
 
 .title {
   text-transform: uppercase;
   font-weight: bold;
-  border-bottom: 0;
+  border-bottom: none;
 }
 
 .button {
@@ -200,13 +205,6 @@ header,
 
 .interactions,
 input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.interactions,
-input {
   border: 0.0625rem solid var(--card-background);
   border-radius: var(--card-border-radius);
   background-color: var(--card-background);
@@ -233,10 +231,6 @@ input {
   }
 }
 
-.image {
-  width: 100%;
-}
-
 a,
 .button {
   transition: all .15s linear;
@@ -260,31 +254,20 @@ nav {
   text-transform: uppercase;
 }
 
-h2,
 h3,
-.paragraph {
+.paragraph,
+h2 {
   text-align: center;
-  padding-left: .7rem;
-  padding-right: .7rem;
 }
 
-h2,
-h3 {
-  font-weight: 600;
-}
-
-img {
-  border-top-left-radius: var(--card-border-radius);
-  border-top-right-radius: var(--card-border-radius);
+footer,
+.header {
   width: 100%;
-  height: auto;
 }
 
 footer {
   background-color: #282931;
-  padding: 1.5rem 1rem;
   gap: 1.5rem;
-  width: 100%;
 }
 
 @media only screen and (min-width: 20rem) and (max-width: 47.9375rem) {
@@ -329,7 +312,6 @@ footer {
 
   h2 {
     font-size: 1.3rem;
-    padding-inline: var(--page-padding);
   }
 
   h3 {
@@ -356,10 +338,6 @@ footer {
     padding-inline: 8rem;
   }
 
-  header {
-    width: 100%;
-  }
-
   nav {
     font-size: 1rem;
     gap: 1rem;
@@ -380,12 +358,6 @@ footer {
   input {
     padding-left: .75rem;
   }
-
-  footer {
-    padding-block: var(--page-padding);
-    padding-inline: var(--mobile-padding);
-  }
-
 }
 
 @media only screen and (min-width: 90rem) and (max-width: 160rem) {
@@ -431,10 +403,4 @@ footer {
   input {
     padding-left: .95rem;
   }
-
-  footer {
-    padding-block: var(--page-padding);
-    padding-inline: var(--mobile-padding);
-  }
-
 }

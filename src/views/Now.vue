@@ -5,7 +5,7 @@ import Subscribe from '@/components/Subscribe.vue';
 
 <template>
 	<main class="wrapper">
-		<h1 class="title">Begli Amanov</h1>
+		<h1>Begli Amanov</h1>
 
 		<p class="paragraph">“Life begins at the end of your comfort zone.”</p>
 

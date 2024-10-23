@@ -3,11 +3,14 @@ import Card from '@/components/Card.vue';
 import Subscribe from '@/components/Subscribe.vue';
 </script>
 
-<!-- "Main" Component with Cards and Subscribe form  -->
 <template>
 	<main class="wrapper">
 		<Card />
+
+		<!-- SUBSCRIBE COMPONENT -->
 		<Subscribe />
 	</main>
+
+	<!-- FOOTER COMPONENT -->
 	<Footer />
 </template>

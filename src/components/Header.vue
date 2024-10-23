@@ -5,8 +5,9 @@ import Nav from './Nav.vue';
 <template>
 	<header>
 		<div class="header title" id="header">
-			<h1>Jumpstart</h1>
+			<RouterLink to="/" class="title"><h1>Jumpstart</h1></RouterLink>
 
+			<!-- Nav Component -->
 			<Nav />
 		</div>
 		<h2>

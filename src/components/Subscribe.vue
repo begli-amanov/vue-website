@@ -17,10 +17,12 @@
 </template>
 
 <style scoped>
+/* Used for controlling of the style of singe h2 in Subscribe Component */
 h2 {
 	border-bottom: 2px solid var(--main-text-color);
 	padding-bottom: 0.25rem;
 	border-bottom-width: 0.1875rem;
 	padding-inline: 0.0625rem;
+	width: fit-content;
 }
 </style>

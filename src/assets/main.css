@@ -161,7 +161,7 @@ header,
 .title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.1rem;
+  border-bottom: 0;
 }
 
 .button {
@@ -293,6 +293,10 @@ footer {
   .wrapper,
   .header {
     padding: var(--mobile-padding);
+  }
+
+  h1 {
+    font-size: 1.4rem;
   }
 
   h2 {

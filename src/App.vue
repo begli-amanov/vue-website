@@ -1,15 +1,10 @@
 <script lang="ts" setup>
-import Card from './components/Card.vue';
-import Footer from './components/Footer.vue';
-import Header from './components/Header.vue';
-import Subscribe from './components/Subscribe.vue';
+import Header from '@/components/Header.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
+	<!-- Header component with Nav within -->
 	<Header />
-	<main class="wrapper">
-		<Card />
-		<Subscribe />
-	</main>
-	<Footer />
+	<RouterView />
 </template>

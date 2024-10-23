@@ -10,12 +10,14 @@ import Ripple from 'primevue/ripple';
 
 // Variables and Function
 const app = createApp(App);
+
 app.directive('ripple', Ripple);
-app.use(router);
 app.use(PrimeVue, {
 	theme: {
 		preset: Aura,
 	},
 	ripple: true,
 });
+
+app.use(router);
 app.mount('#app');

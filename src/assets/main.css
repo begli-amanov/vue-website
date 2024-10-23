@@ -1,3 +1,9 @@
+/* 
+==========================================================================
+   PLUGIN IMPORTS
+==========================================================================
+*/
+
 @import "primeicons/primeicons.css";
 @import "tailwindcss/base";
 @import "tailwindcss/components";
@@ -89,7 +95,7 @@ h6 {
 
 /* 
 ==========================================================================
-   Custom Variables
+   CUSTOM VARIABLES
 ==========================================================================
 */
 
@@ -108,9 +114,11 @@ h6 {
 
 /* 
 ==========================================================================
-   Custom Variables
+   CLASSES AND ELEMENTS
 ==========================================================================
 */
+
+/* Layout */
 
 .card,
 .wrapper,
@@ -120,7 +128,6 @@ footer,
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .card,
@@ -282,17 +289,17 @@ footer {
 
 @media only screen and (min-width: 20rem) and (max-width: 47.9375rem) {
 
+  .card,
+  .wrapper,
+  .header {
+    padding: var(--mobile-padding);
+  }
+
   body,
   .button,
   nav {
     font-size: .875rem;
     line-height: 140%;
-  }
-
-  .card,
-  .wrapper,
-  .header {
-    padding: var(--mobile-padding);
   }
 
   h1 {
@@ -305,58 +312,33 @@ footer {
 }
 
 @media only screen and (min-width: 47.9375rem) and (max-width: 63.9375rem) {
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  nav {
-    font-size: 1rem;
-    gap: 1rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
 
   .card {
     padding: 2rem;
     margin-bottom: calc(4rem - 2rem);
   }
-}
-
-@media only screen and (min-width: 64rem) and (max-width: 89.9375rem) {
-
-  .wrapper,
-  .header,
-  h2 {
-    padding-inline: 8rem;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
 
   nav {
     font-size: 1rem;
     gap: 1rem;
   }
 
-  input {
-    padding-left: .75rem;
+  h1 {
+    font-size: 1.6rem;
   }
 
-  header {
-    width: 100%;
+  h2 {
+    font-size: 1.3rem;
+    padding-inline: var(--page-padding);
   }
 
-  footer {
-    padding-block: var(--page-padding);
-    padding-inline: var(--mobile-padding);
+  h3 {
+    font-size: 1.2rem;
   }
+
+}
+
+@media only screen and (min-width: 64rem) and (max-width: 89.9375rem) {
 
   .card {
     padding: 2rem;
@@ -366,6 +348,42 @@ footer {
   .interactions {
     justify-content: space-between;
     width: 50%;
+  }
+
+  .wrapper,
+  .header,
+  h2 {
+    padding-inline: 8rem;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  nav {
+    font-size: 1rem;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  input {
+    padding-left: .75rem;
+  }
+
+  footer {
+    padding-block: var(--page-padding);
+    padding-inline: var(--mobile-padding);
   }
 
 }
@@ -392,6 +410,10 @@ footer {
     padding-inline: 12rem;
   }
 
+  nav {
+    gap: 1rem;
+  }
+
   h1 {
     font-size: 2.2rem;
   }
@@ -402,8 +424,8 @@ footer {
     margin: auto;
   }
 
-  nav {
-    gap: 1rem;
+  h3 {
+    font-size: 1.4rem;
   }
 
   input {

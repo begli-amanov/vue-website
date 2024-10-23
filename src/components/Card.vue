@@ -1,6 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
+	<!-- UNREAL ENGINE CARD -->
 	<article class="card">
 		<a href="https://www.unrealengine.com/" class="image">
 			<img
@@ -9,7 +10,7 @@
 			/>
 		</a>
 
-		<span class="title">Unreal Engine</span>
+		<h3 class="title">Unreal Engine</h3>
 
 		<p>
 			<strong> Unreal Engine</strong> is an amazing software that allows you to
@@ -36,12 +37,13 @@
 		</p>
 	</article>
 
+	<!-- WEB DEV CARD -->
 	<article class="card">
 		<a href="https://developer.mozilla.org/">
 			<img src="../assets/ben-kolde-unsplash.jpg" alt="" />
 		</a>
 
-		<span class="title">Web Dev</span>
+		<h3 class="title">Web Dev</h3>
 
 		<p>
 			<strong>Web Development</strong> is currently one of the most sought-after

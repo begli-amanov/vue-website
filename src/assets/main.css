@@ -351,9 +351,17 @@ footer {
 /*  1440px ---> 2560px */
 @media only screen and (min-width: 90rem) and (max-width: 160rem) {
 
-  .wrapper,
-  header {
+  .wrapper {
     padding-inline: 12rem;
+  }
+
+  .card,
+  header {
+    width: 66rem;
+  }
+
+  header {
+    padding-inline: 0;
   }
 
   h1 {

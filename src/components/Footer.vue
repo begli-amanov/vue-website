@@ -4,7 +4,7 @@ import Nav from './Nav.vue';
 
 <template>
 	<footer>
-		<a href="#header" class="title">JUMPSTART</a>
+		<a href="#header"> <h2>JUMPSTART</h2></a>
 		<p class="paragraph">Ready for more? Than check out my YouTube channel.</p>
 
 		<!-- footer navigation -->

@@ -4,6 +4,7 @@ import Subscribe from '@/components/Subscribe.vue';
 </script>
 
 <template>
+	<!-- HOME VIEW WITH CARDS AND SUBSCRIBE COMPONENTS -->
 	<main class="wrapper">
 		<Card />
 

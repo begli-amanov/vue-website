@@ -36,6 +36,7 @@ npm run build
 
 - Problem: Fix the bold font on `<p>` element.
 - Link to the top of the page ist too small.
+- Learned how to make image fill the entire width and height of the container
 
 ## REFLECTING: 23.10.2024
 

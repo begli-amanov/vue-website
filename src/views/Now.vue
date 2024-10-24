@@ -4,20 +4,23 @@ import Subscribe from '@/components/Subscribe.vue';
 </script>
 
 <template>
+	<!-- MAIN CONTENT OF NOW VIEW -->
 	<main class="wrapper">
 		<h1>Begli Amanov</h1>
 
 		<p class="paragraph">“Life begins at the end of your comfort zone.”</p>
 
-		<h4>Location:</h4>
-		<p>South Germany, Stuttgart</p>
+		<ul class="paragraph">
+			<li>
+				<strong>Location:</strong>
+				South Germany, Stuttgart
+			</li>
 
-		<h4>Professional title:</h4>
-		<p>Tech Support Agent</p>
+			<li>
+				<h4>Professional title: Tech Support Agent</h4>
+			</li>
+			<h4>What do you do?</h4>
 
-		<h4>What do you do?</h4>
-
-		<ul style="list-style: none; text-align: center">
 			<li>Starting YouTube career</li>
 			<li>
 				Reading Daniel Levitin's book:
@@ -27,13 +30,13 @@ import Subscribe from '@/components/Subscribe.vue';
 		</ul>
 
 		<h4>Why?</h4>
-		<p style="text-align: center">
+		<p class="paragraph">
 			I have an assumption, that I could make a good impact when it comes to
 			story telling and video editing. But who knows???
 		</p>
 
 		<h4>What should we read?</h4>
-		<p style="text-align: center">
+		<p class="paragraph">
 			Philippa Perry:
 			<strong
 				>The Book You Wish Your Parents Had Read (and Your Children Will Be Glad
@@ -42,9 +45,11 @@ import Subscribe from '@/components/Subscribe.vue';
 			One of the most useful books I've red so far.
 		</p>
 
+		<!-- SUBSCRIBE COMPONENT -->
 		<Subscribe />
 	</main>
 
+	<!-- FOOTER COMPONENT -->
 	<Footer />
 </template>
 

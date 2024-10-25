@@ -1,11 +1,23 @@
-import './assets/main.css'
+import { createApp } from 'vue';
+import App from './App.vue';
+import './assets/main.css';
+import router from './router';
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+// PrimeVue imports
+import Aura from '@primevue/themes/aura';
+import PrimeVue from 'primevue/config';
+import Ripple from 'primevue/ripple';
 
-const app = createApp(App)
+// Variables and Function
+const app = createApp(App);
 
-app.use(router)
+app.directive('ripple', Ripple);
+app.use(PrimeVue, {
+	theme: {
+		preset: Aura,
+	},
+	ripple: true,
+});
 
-app.mount('#app')
+app.use(router);
+app.mount('#app');

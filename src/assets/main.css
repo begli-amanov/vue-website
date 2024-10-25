@@ -1,3 +1,14 @@
+/* 
+==========================================================================
+   PLUGIN IMPORTS
+==========================================================================
+*/
+
+@import "primeicons/primeicons.css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -25,21 +36,13 @@ body {
   transition:
     color 0.5s,
     background-color 0.5s;
-  line-height: 1.6;
   font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
+    'Poppins',
     sans-serif;
-  font-size: 15px;
+  line-height: 1.5;
+  font-size: 1rem;
+  background-color: #1d1e27;
+  color: var(--main-text-color);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -55,6 +58,8 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  border-top-left-radius: var(--card-border-radius);
+  border-top-right-radius: var(--card-border-radius);
 }
 
 /*
@@ -70,13 +75,17 @@ select {
 /*
   7. Avoid text overflows
 */
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  overflow-wrap: break-word;
+  font-weight: bold;
+}
+
+p {
   overflow-wrap: break-word;
 }
 
@@ -86,4 +95,284 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* 
+==========================================================================
+   CUSTOM VARIABLES
+==========================================================================
+*/
+
+:root {
+  --main-text-color: #fff;
+  --card-background: #34343d;
+  --border: .0625rem solid #616268;
+  --emerald: #34d399;
+  --card-border-radius: .375rem;
+  --page-padding: 2rem;
+  --mobile-padding: 1rem;
+  --button-transition-duration: .2s;
+  scroll-behavior: smooth;
+  --hover-color: #6ee7b7;
+}
+
+/* 
+==========================================================================
+   CLASSES AND ELEMENTS
+==========================================================================
+*/
+
+/* LAYOUT */
+
+.card,
+.wrapper,
+.subscribe-block,
+.header,
+.interactions,
+footer,
+input,
+header,
+#app {
+  display: flex;
+  align-items: center;
+}
+
+.card,
+.wrapper,
+.subscribe-block,
+header,
+footer,
+#app {
+  flex-direction: column;
+}
+
+.wrapper,
+header {
+  gap: 2rem;
+}
+
+.card,
+.wrapper,
+.subscribe-block,
+header,
+footer {
+  padding: var(--page-padding);
+}
+
+.card,
+nav {
+  gap: 1rem;
+}
+
+.paragraph,
+h3,
+h2 {
+  text-align: center;
+}
+
+/* setting both <img> and its parents width to 100% allows the image to fill the entire container */
+.header,
+.image,
+footer,
+header,
+img {
+  width: 100%;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+nav {
+  display: inline-flex;
+}
+
+/* MODULES */
+
+.interactions,
+input {
+  border: 0.0625rem solid var(--card-background);
+  border-radius: var(--card-border-radius);
+  background-color: var(--card-background);
+  outline-color: transparent;
+  max-width: 100%;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+a,
+.button {
+  transition: all .15s linear;
+}
+
+.title,
+nav {
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: bold;
+  border-bottom: none;
+}
+
+.card {
+  border: var(--border);
+  background-color: var(--card-background);
+  border-radius: var(--card-border-radius);
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #18181b;
+  background: var(--emerald);
+  border: .0625rem solid var(--emerald);
+  padding: .375rem .75rem;
+  font-weight: 500;
+  border-radius: var(--card-border-radius);
+  outline-color: transparent;
+  gap: .5rem;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--hover-color);
+    color: #18181b;
+  }
+}
+
+.pi.pi-external-link,
+.pi.pi-check {
+  font-size: 0.75rem;
+}
+
+.interactions {
+  padding-top: .375rem;
+  padding-bottom: .375rem;
+  padding-left: .75rem;
+  padding-right: .375rem;
+  margin-bottom: 1rem;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid var(--emerald);
+  }
+}
+
+a {
+  border-bottom: .0625rem solid var(--emerald);
+  color: var(--emerald);
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--hover-color);
+  }
+}
+
+footer {
+  background-color: #282931;
+  gap: 1.5rem;
+}
+
+/* 
+==========================================================================
+   MEDIA QUERIES
+==========================================================================
+*/
+
+/*  320px ---> 767px */
+@media only screen and (min-width: 20rem) and (max-width: 47.9375rem) {
+
+  .card,
+  .wrapper,
+  header {
+    padding: var(--mobile-padding);
+  }
+
+  body {
+    font-size: .875rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+  }
+}
+
+/*  768px ---> 1023px */
+@media only screen and (min-width: 48rem) and (max-width: 63.9375rem) {
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/*  1024px ---> 1439px */
+@media only screen and (min-width: 64rem) and (max-width: 89.9375rem) {
+
+  .wrapper,
+  header {
+    padding-inline: 8rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+/*  1440px ---> 2560px */
+@media only screen and (min-width: 90rem) and (max-width: 160rem) {
+
+  .wrapper {
+    padding-inline: 12rem;
+  }
+
+  .card,
+  header {
+    width: 66rem;
+  }
+
+  header {
+    padding-inline: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
 }

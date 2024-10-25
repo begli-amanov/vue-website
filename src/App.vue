@@ -1,3 +1,10 @@
-<script setup lang="ts"></script>
+<script lang="ts" setup>
+import Header from '@/components/Header.vue';
+import { RouterView } from 'vue-router';
+</script>
 
-<template></template>
+<template>
+	<!-- HEADER COMPONENT WITH NAV COMPONENT WITHIN -->
+	<Header />
+	<RouterView />
+</template>

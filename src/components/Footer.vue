@@ -4,12 +4,13 @@ import Nav from './Nav.vue';
 
 <template>
 	<footer>
-		<a href="#header"> <h2>JUMPSTART</h2></a>
 		<p class="paragraph">Ready for more? Than check out my YouTube channel.</p>
 
 		<!-- footer navigation -->
-		<a href="https://www.youtube.com/" class="button"
-			>YouTube<i class="pi pi-youtube"></i>
+		<a href="youtube.com">
+			<button class="button" v-ripple>
+				YouTube<i class="pi pi-youtube"></i>
+			</button>
 		</a>
 
 		<Nav />
@@ -17,4 +18,8 @@ import Nav from './Nav.vue';
 	</footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+a {
+	border-bottom: 0;
+}
+</style>

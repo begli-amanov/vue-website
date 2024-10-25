@@ -283,11 +283,25 @@ footer {
   gap: 1.5rem;
 }
 
+.p-icon {
+  color: #18181b;
+}
+
 /* 
 ==========================================================================
    MEDIA QUERIES
 ==========================================================================
 */
+
+@media only screen and (max-width: 20rem) {
+
+  .p-button.p-component.p-button-icon-only.p-scrolltop {
+    right: 5px;
+    bottom: 1.5625rem;
+    height: 2rem;
+    width: 2rem;
+  }
+}
 
 /*  320px ---> 767px */
 @media only screen and (min-width: 20rem) and (max-width: 47.9375rem) {

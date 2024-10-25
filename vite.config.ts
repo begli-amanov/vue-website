@@ -12,6 +12,7 @@ export default defineConfig({
 			resolvers: [PrimeVueResolver()],
 		}),
 	],
+	base: 'Vue-Expense-Tracker',
 	resolve: {
 		alias: {
 			'@': fileURLToPath(new URL('./src', import.meta.url)),

@@ -7,7 +7,7 @@ import Nav from './Nav.vue';
 		<p class="paragraph">Ready for more? Than check out my YouTube channel.</p>
 
 		<!-- footer navigation -->
-		<a href="youtube.com">
+		<a href="https://youtube.com">
 			<button class="button" v-ripple>
 				YouTube<i class="pi pi-youtube"></i>
 			</button>

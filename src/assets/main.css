@@ -257,7 +257,7 @@ nav {
   padding-bottom: .375rem;
   padding-left: .75rem;
   padding-right: .375rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   &:hover,
   &:focus,
@@ -280,7 +280,7 @@ a {
 
 footer {
   background-color: #282931;
-  gap: 1.5rem;
+  gap: 2.2rem;
 }
 
 .p-icon {

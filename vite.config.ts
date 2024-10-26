@@ -12,7 +12,7 @@ export default defineConfig({
 			resolvers: [PrimeVueResolver()],
 		}),
 	],
-	base: '/vue-website/',
+	base: './',
 	resolve: {
 		alias: {
 			'@': fileURLToPath(new URL('./src', import.meta.url)),

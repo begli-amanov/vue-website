@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-	<h2>Subscribe</h2>
+	<h2 class="subscribe-heading">Subscribe</h2>
 
 	<p class="paragraph">
 		Enjoying website? You could enjoy my
@@ -20,10 +20,9 @@
 /* Used for controlling of the style of singe h2 in Subscribe Component */
 h2 {
 	border-bottom: 2px solid var(--main-text-color);
-	padding-bottom: 0.25rem;
 	border-bottom-width: 0.1875rem;
-	padding-inline: 0.0625rem;
 	padding-top: 0;
-	max-width: 100%;
+	padding-bottom: 0.25rem;
+	padding-inline: 0.0625rem;
 }
 </style>

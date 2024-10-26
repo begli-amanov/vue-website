@@ -10,5 +10,7 @@ import { RouterView } from 'vue-router';
 
 	<!-- SCROLL-TOP COMPONENT -->
 	<ScrollTop />
+
+	<!-- for now it is enough to have this RouterView only here. Without it, there will be no content displayed from other components -->
 	<RouterView />
 </template>

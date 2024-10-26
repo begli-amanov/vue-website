@@ -21,11 +21,6 @@
 }
 
 @font-face {
-  font-family: 'Inter Var';
-  src: url('../fonts/Inter-Var.ttf');
-}
-
-@font-face {
   font-family: 'Poppins-Bold';
   src: url('../fonts/Poppins-Bold.ttf');
 }
@@ -156,7 +151,6 @@ p {
 
 .card,
 .wrapper,
-.subscribe-block,
 .header,
 .interactions,
 footer,
@@ -169,7 +163,6 @@ header,
 
 .card,
 .wrapper,
-.subscribe-block,
 header,
 footer,
 #app {
@@ -183,7 +176,6 @@ header {
 
 .card,
 .wrapper,
-.subscribe-block,
 header,
 footer {
   padding: var(--page-padding);
@@ -277,11 +269,18 @@ nav {
   }
 }
 
+/* to control icon sizes  */
 .pi.pi-external-link,
 .pi.pi-check {
   font-size: 0.75rem;
 }
 
+/* to control scroll-top icons color  */
+.p-icon {
+  color: #18181b;
+}
+
+/* input elements */
 .interactions {
   padding-top: .375rem;
   padding-bottom: .375rem;
@@ -313,16 +312,13 @@ footer {
   gap: 2.2rem;
 }
 
-.p-icon {
-  color: #18181b;
-}
-
 /* 
 ==========================================================================
    MEDIA QUERIES
 ==========================================================================
 */
-
+/*  320px to make scroll-top button a bit smaller and move slightly to 
+the right */
 @media only screen and (max-width: 20rem) {
 
   .p-button.p-component.p-button-icon-only.p-scrolltop {
@@ -340,6 +336,12 @@ footer {
   .wrapper,
   header {
     padding: var(--mobile-padding);
+  }
+
+  /* adding fixed width to fix weird issue of breaking of this heading in
+  subscribe component on real mobile devices */
+  .subscribe-heading {
+    width: 6.25rem;
   }
 
   body {

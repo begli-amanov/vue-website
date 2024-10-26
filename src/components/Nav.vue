@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router';
 <template>
 	<nav>
 		<RouterLink to="/now">Now</RouterLink>
-		<a href="https://story-journal.online">
+		<a href="https://story-journal.online" target="_blank">
 			<span>
 				Blog
 				<i class="pi pi-external-link"> </i>

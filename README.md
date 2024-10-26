@@ -41,3 +41,8 @@ npm run build
 ## REFLECTING: 23.10.2024
 
 - Learned how to initiate Vue Router
+
+## REFLECTING: 26.10.2024
+
+- Fix the NOW page
+- Use SVG

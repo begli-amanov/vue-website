@@ -9,6 +9,32 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* 
+==========================================================================
+   FONT IMPORT
+==========================================================================
+*/
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Inter Var';
+  src: url('../fonts/Inter-Var.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('../fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url('../fonts/Poppins-SemiBold.ttf');
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -82,7 +108,11 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-  font-weight: bold;
+  font-family: 'Poppins-Bold', sans-serif;
+}
+
+h2 {
+  font-family: 'Poppins-SemiBold', serif;
 }
 
 p {
@@ -364,6 +394,12 @@ footer {
 
 /*  1440px ---> 2560px */
 @media only screen and (min-width: 90rem) and (max-width: 160rem) {
+
+  .wrapper,
+  header,
+  footer {
+    font-size: 1.125rem;
+  }
 
   .wrapper {
     padding-inline: 12rem;

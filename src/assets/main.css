@@ -352,9 +352,6 @@ footer {
 
   h2 {
     font-size: 1.125rem;
-
-    /* setting here fixed width due to the weird bug in the mobile version on real devices */
-    width: 6.25rem;
   }
 }
 

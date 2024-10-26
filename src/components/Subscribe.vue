@@ -24,5 +24,6 @@ h2 {
 	border-bottom-width: 0.1875rem;
 	padding-inline: 0.0625rem;
 	padding-top: 0;
+	max-width: 100%;
 }
 </style>

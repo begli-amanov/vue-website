@@ -56,7 +56,7 @@ import Subscribe from '@/components/Subscribe.vue';
 						Glad That You Did).</strong
 					>
 				</h3>
-				<p>One of the most useful books I've red so far.</p>
+				<p>One of the most useful books I've read so far.</p>
 			</li>
 		</ul>
 

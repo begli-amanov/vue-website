@@ -44,5 +44,5 @@ npm run build
 
 ## REFLECTING: 26.10.2024
 
-- Fix the NOW page
+- [x] Fix the NOW page
 - Use SVG

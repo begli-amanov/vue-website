@@ -7,45 +7,58 @@ import Subscribe from '@/components/Subscribe.vue';
 	<!-- MAIN CONTENT OF NOW VIEW -->
 	<main class="wrapper">
 		<h1>Begli Amanov</h1>
+		<h2>“Life begins at the end of your comfort zone.”</h2>
+		<ul class="paragraph">
+			<li>
+				<p>Location:</p>
+				<h3>South Germany, Stuttgart</h3>
+			</li>
 
-		<section class="wrapper">
-			<p class="paragraph">“Life begins at the end of your comfort zone.”</p>
+			<li>
+				<p>Professional title:</p>
+				<h3>Tech Support Agent</h3>
+			</li>
 
-			<ul class="paragraph">
-				<li>
-					<strong>Location:</strong>
-					South Germany, Stuttgart
-				</li>
+			<li>
+				<p>What do you do?</p>
+				<h3>Online writing</h3>
+			</li>
 
-				<li>
-					<h4>Professional title: Tech Support Agent</h4>
-				</li>
-				<h4>What do you do?</h4>
+			<li>
+				<p>Reading Daniel Levitin's book:</p>
+				<h3>The Organized Mind.</h3>
+			</li>
+			<li>
+				<p>Listening on podcasts with</p>
+				<h3>
+					<a href="https://www.billiondollarcreator.com/" target="_blank"
+						>Nathan Barry and Rachel Rodgers</a
+					>
+				</h3>
+			</li>
 
-				<li>Starting YouTube career</li>
-				<li>
-					Reading Daniel Levitin's book:
-					<strong>The Organized Mind.</strong>
-				</li>
-				<li>Listening on podcasts with Nathan Barry and Rachel Rodgers</li>
-			</ul>
+			<li>
+				<p>Why?</p>
+				<h3>
+					Learning new things each day and trying to improve slowly and steady
+					on for me important areas of my human being. If I can help my self, I
+					would be able to help someone around me.
+				</h3>
+			</li>
 
-			<h4>Why?</h4>
-			<p class="paragraph">
-				I have an assumption, that I could make a good impact when it comes to
-				story telling and video editing. But who knows???
-			</p>
+			<li>
+				<p>What should we read?</p>
 
-			<h4>What should we read?</h4>
-			<p class="paragraph">
-				Philippa Perry:
-				<strong
-					>The Book You Wish Your Parents Had Read (and Your Children Will Be
-					Glad That You Did).</strong
-				>
-				One of the most useful books I've red so far.
-			</p>
-		</section>
+				<h3>
+					<p>Philippa Perry:</p>
+					<strong
+						>The Book You Wish Your Parents Had Read (and Your Children Will Be
+						Glad That You Did).</strong
+					>
+				</h3>
+				<p>One of the most useful books I've red so far.</p>
+			</li>
+		</ul>
 
 		<!-- SUBSCRIBE COMPONENT -->
 		<Subscribe />

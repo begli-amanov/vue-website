@@ -291,7 +291,7 @@ nav {
   &:hover,
   &:focus,
   &:active {
-    border: 1px solid var(--emerald);
+    border: .0625rem solid var(--emerald);
   }
 }
 
@@ -306,6 +306,12 @@ a {
     color: var(--hover-color);
   }
 }
+
+ul li {
+  margin-bottom: .5rem;
+  padding: 1rem;
+}
+
 
 footer {
   background-color: #282931;
@@ -322,7 +328,7 @@ the right */
 @media only screen and (max-width: 20rem) {
 
   .p-button.p-component.p-button-icon-only.p-scrolltop {
-    right: 5px;
+    right: .3125rem;
     bottom: 1.5625rem;
     height: 2rem;
     width: 2rem;

@@ -3,8 +3,8 @@ import Nav from './Nav.vue';
 </script>
 
 <template>
-	<header>
-		<div class="header title" id="header">
+	<header id="header">
+		<div class="header title">
 			<RouterLink to="/" class="title"><h1>Jumpstart</h1></RouterLink>
 
 			<!-- NAV WITH ROUTER MECHANISM FROM VUE-->

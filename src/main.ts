@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import './assets/main.css';
 import router from './router';
+import './styles/main.css';
 
 // PrimeVue imports
 import Aura from '@primevue/themes/aura';

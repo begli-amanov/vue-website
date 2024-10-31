@@ -3,7 +3,7 @@
 <template>
 	<!-- UNREAL ENGINE CARD -->
 	<article class="card">
-		<a href="https://www.unrealengine.com/" class="image">
+		<a href="https://www.unrealengine.com/" target="_blank" class="image">
 			<img
 				src="../assets/UE-logo.jpg"
 				alt="White unreal engine logo on a black background"
@@ -17,7 +17,9 @@
 			create virtual worlds and visually stunning games. There are plenty of
 			resources available to help you learn, but one of the best ways is to
 			watch the YouTube videos from
-			<a href="https://www.youtube.com/@UnrealSensei">Unreal Sensei.</a>
+			<a href="https://www.youtube.com/@UnrealSensei" target="_blank"
+				>Unreal Sensei.</a
+			>
 			He has multiple 5-hour videos that are completely free. Don't be
 			intimidated by the length - it's definitely worth it to kickstart your
 			Unreal Journey with this
@@ -25,13 +27,15 @@
 				href="https://www.youtube.com/watch?v=k-zMkzmduqI&ab_channel=UnrealSensei"
 				>tutorial</a
 			>. After you've mastered Sensei's tutorials, check out
-			<a href="https://www.youtube.com/@magnetvfx">Amit's</a>
+			<a href="https://www.youtube.com/@magnetvfx" target="_blank">Amit's</a>
 			channel for creating small movies with landscapes.
 
 			<br /><br />
 
 			And of course, don't forget to explore
-			<a href="https://www.youtube.com/@WilliamFaucher"> William Faucher's </a>
+			<a href="https://www.youtube.com/@WilliamFaucher" target="_blank">
+				William Faucher's
+			</a>
 			YouTube channel alongside with his fantastic works on the Epic Games
 			Marketplace. Give him the love he deserves!
 		</p>
@@ -39,7 +43,7 @@
 
 	<!-- WEB DEV CARD -->
 	<article class="card">
-		<a href="https://developer.mozilla.org/">
+		<a href="https://developer.mozilla.org/" target="_blank">
 			<img src="../assets/ben-kolde-unsplash.jpg" alt="" />
 		</a>
 
@@ -63,8 +67,9 @@
 			a Code Editor. There are plenty of amazing editors out there, and as time
 			goes by, you'll develop your own preferences. But I recommend starting
 			with
-			<a href="https://code.visualstudio.com/Download">Visual Studio Code</a>.
-			You'll fall in love with its extensive list of extensions, which make
+			<a href="https://code.visualstudio.com/Download" target="_blank"
+				>Visual Studio Code</a
+			>. You'll fall in love with its extensive list of extensions, which make
 			coding adventures much easier, faster, and more enjoyable.
 
 			<br /><br />
@@ -72,7 +77,7 @@
 			I could provide you with hundreds of links to start learning web
 			development, but a great starting point for me (and probably for you too)
 			was
-			<a href="https://learn.shayhowe.com/">Shay Howe's</a>
+			<a href="https://learn.shayhowe.com/" target="_blank">Shay Howe's</a>
 			wonderful book. He has written two books, one for beginners and another
 			for more advanced topics. I found his work to be highly informative,
 			entertaining, and comprehensive, covering every aspect of web development.
@@ -85,8 +90,9 @@
 			<br /><br />
 
 			You might also want to check out the fantastic documentation from
-			<a href="https://developer.mozilla.org/en-US/">Mozilla</a>. It's an
-			invaluable resource that you can refer to whenever you have any questions.
+			<a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla</a
+			>. It's an invaluable resource that you can refer to whenever you have any
+			questions.
 
 			<br /><br />
 

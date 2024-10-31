@@ -8,12 +8,16 @@
 		<a href=""><strong>blog</strong></a> as well. Subscribe with the
 		<strong>form</strong> below. Unsubscribe at any time.
 	</p>
-	<div class="interactions">
-		<input type="text" placeholder="Enter your mail address" />
-		<button class="button" v-ripple>
-			Submit <i class="pi pi-check icon"> </i>
-		</button>
-	</div>
+	<form action="post" class="interactions">
+		<input type="text" placeholder="Enter your mail address" required />
+		<a
+			href="mailto:email.com?subject=Reaching%20Out&body=How%20are%20you"
+			class="link-button"
+		>
+			<button class="button" v-ripple>
+				Submit <i class="pi pi-check icon"> </i></button
+		></a>
+	</form>
 </template>
 
 <style scoped>

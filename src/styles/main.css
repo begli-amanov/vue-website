@@ -269,6 +269,10 @@ nav {
   }
 }
 
+.link-button {
+  border-bottom: 0;
+}
+
 /* to control icon sizes  */
 .pi.pi-external-link,
 .pi.pi-check {

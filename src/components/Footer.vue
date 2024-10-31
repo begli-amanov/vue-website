@@ -7,7 +7,7 @@ import Nav from './Nav.vue';
 		<p class="paragraph">Ready for more? Than check out my YouTube channel.</p>
 
 		<!-- footer navigation -->
-		<a href="https://youtube.com">
+		<a href="https://youtube.com" target="_blank" class="link-button">
 			<button class="button" v-ripple>
 				YouTube<i class="pi pi-youtube"></i>
 			</button>
@@ -18,8 +18,4 @@ import Nav from './Nav.vue';
 	</footer>
 </template>
 
-<style scoped>
-a {
-	border-bottom: 0;
-}
-</style>
+<style scoped></style>

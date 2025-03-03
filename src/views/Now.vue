@@ -21,18 +21,18 @@ import Subscribe from '@/components/Subscribe.vue';
 
 			<li>
 				<p>What do you do?</p>
-				<h3>Online writing</h3>
+				<h3>Online writing, improving UI skills, developing new ones.</h3>
 			</li>
 
 			<li>
-				<p>Reading Daniel Levitin's book:</p>
-				<h3>The Organized Mind.</h3>
+				<p>Reading Adele Faber's and Elaine Mazlish's book:</p>
+				<h3>So sage ich's meinem Kind.</h3>
 			</li>
 			<li>
-				<p>Listening on podcasts with</p>
+				<p>Listening on podcast</p>
 				<h3>
-					<a href="https://www.billiondollarcreator.com/" target="_blank"
-						>Nathan Barry and Rachel Rodgers</a
+					<a href="https://robdial.com/podcast/" target="_blank"
+						>Rob Dial: Mindset Mentor</a
 					>
 				</h3>
 			</li>
@@ -42,7 +42,7 @@ import Subscribe from '@/components/Subscribe.vue';
 				<h3>
 					Learning new things each day and trying to improve slowly and steady
 					on for me important areas of my human being. If I can help my self, I
-					would be able to help someone around me.
+					would be able to help someone else around me.
 				</h3>
 			</li>
 
@@ -56,7 +56,10 @@ import Subscribe from '@/components/Subscribe.vue';
 						Glad That You Did).</strong
 					>
 				</h3>
-				<p>One of the most useful books I've read so far.</p>
+				<p>
+					One of the most useful books about parenting and relationships I've
+					read so far.
+				</p>
 			</li>
 		</ul>
 
